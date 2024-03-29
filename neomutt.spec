@@ -1,6 +1,6 @@
 Summary: Text mode Mail Client
 Name: neomutt
-Version: 20240323
+Version: 20240329
 Release: 1%{?dist}
 Epoch: 6
 Url: https://neomutt.org/
@@ -78,7 +78,7 @@ cat %{SOURCE1} >> %{buildroot}%{_sysconfdir}/neomuttrc
 %{_datadir}/neomutt
 
 %changelog
-* Sat Mar 23 2024 Richard Russon <rich@flatcap.org> - 20240323-1
+* Fri Mar 29 2024 Richard Russon <rich@flatcap.org> - 20240323-1
 - Bug Fixes
   - #4185 c441f5957 Fix memory leak in trash_append()
   - #4189 Fix off-by-one error in %b with notmuch
@@ -106,6 +106,9 @@ cat %{SOURCE1} >> %{buildroot}%{_sysconfdir}/neomuttrc
   - tidy buf_strcpy() calls
   - tidy char buffers
   - test: default timezone to UTC
+
+* Sat Mar 23 2024 Richard Russon <rich@flatcap.org> - 20240323-1
+- Do NOT use this release
 
 * Thu Feb 01 2024 Richard Russon <rich@flatcap.org> - 20240201-1
 - Features
