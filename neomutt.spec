@@ -9,7 +9,7 @@ Url: https://neomutt.org/
 # BSD: Autosetup build system, queue.h
 # MIT: Acutest unit test framework, some themes
 # Public Domain: pgpewrap.c, mbox.5, some themes
-License: GPLv2+ and BSD and MIT and Public Domain
+License: GPL-2.0-or-later AND LicenseRef-Callaway-BSD AND LicenseRef-Callaway-MIT AND LicenseRef-Callaway-Public-Domain
 
 Source: https://github.com/neomutt/neomutt/archive/%{version}/%{name}-%{version}.tar.gz
 Source1: fedora-colors.rc
@@ -138,6 +138,12 @@ cat %{SOURCE1} >> %{buildroot}%{_sysconfdir}/neomuttrc
   - #4366 - Fix up slashes in `imap_fix_path()`
   - #4378 - Fix padding with an empty string
   - tidy expando library
+
+* Mon Sep 02 2024 Miroslav Suchý <msuchy@redhat.com> - 6:20240425-3
+- convert license to SPDX
+
+* Thu Jul 18 2024 Fedora Release Engineering <releng@fedoraproject.org> - 6:20240425-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_41_Mass_Rebuild
 
 * Thu Apr 25 2024 Richard Russon <rich@flatcap.org> - 20240425-1
 - Bug Fixes
