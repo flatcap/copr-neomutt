@@ -1,6 +1,6 @@
 Summary: Text mode Mail Client
 Name: neomutt
-Version: 20250109
+Version: 20250113
 Release: 1%{?dist}
 Epoch: 6
 Url: https://neomutt.org/
@@ -78,7 +78,7 @@ cat %{SOURCE1} >> %{buildroot}%{_sysconfdir}/neomuttrc
 %{_datadir}/neomutt
 
 %changelog
-* Thu Jan 09 2025 Richard Russon <rich@flatcap.org> - 20250109-1
+* Mon Jan 13 2025 Richard Russon <rich@flatcap.org> - 20250113-1
 - Bug Fixes
   - #4477 fix crash in folder-hook
   - #4480 fix memory leak in compose message preview (fixes #4478)
@@ -103,6 +103,9 @@ cat %{SOURCE1} >> %{buildroot}%{_sysconfdir}/neomuttrc
   - #4481 Simplify `mutt_file_fopen()`
   - colour refactoring
   - standardise variable names for temporary files
+
+* Thu Jan 09 2025 Richard Russon <rich@flatcap.org> - 20250109-1
+- BROKEN - DO NOT USE
 
 * Thu Dec 12 2024 Richard Russon <rich@flatcap.org> - 20241212-1
 - Features
